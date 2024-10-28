@@ -14,19 +14,7 @@
 #4. O ano é bissexto (tem 366 dias).
 #5. O ano não é um ano bissexto (tem 365 dias).
 #ENTRADA
-# Solicita a data inicial do usuário
-dia = int(input("Informe o dia: "))
-mes = int(input("Informe o mês: "))
-ano = int(input("Informe o ano: "))
-hora = int(input("Informe a hora: "))
-minuto = int(input("Informe o minuto: "))
-segundo = int(input("Informe o segundo: "))
 
-# Solicita a informação a ser adicionada
-quantidade = int(input("Informe a quantidade a acrescentar: "))
-tipo = input("Informe o tipo (segundo, minuto, hora, dia, mes, ano): ")
-
-#PROCESSAMENTO
 # Verifica se o ano é bissexto
 # Solicita a data inicial do usuário
 dia = int(input("Informe o dia: "))
@@ -39,7 +27,9 @@ segundo = int(input("Informe o segundo: "))
 # Solicita a informação a ser adicionada
 quantidade = int(input("Informe a quantidade a acrescentar: "))
 tipo = input("Informe o tipo (segundo, minuto, hora, dia, mes, ano): ")
-
+#PROCESSAMENTO
+# % = resto da divisão
+# // = inteiro da divisão
 # Verifica se o ano é bissexto
 if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
     bissexto = True
